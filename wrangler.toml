@@ -1,0 +1,12 @@
+name = "groundlevel-worker"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Public · free tier · no DB · no KV · pure compute
+# Deploy to your own account: `wrangler login && wrangler deploy`
+
+[vars]
+SDK_VERSION = "0.1.0"
+# CORS_ORIGIN = "*"   # uncomment to lock CORS to one origin
+# RATE_LIMIT  = "60"  # per-IP per minute (TODO when KV added)

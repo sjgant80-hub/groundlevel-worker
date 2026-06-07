@@ -1,0 +1,29 @@
+{
+  "name": "@sjgant80-hub/groundlevel-worker",
+  "version": "0.1.0",
+  "description": "Cloudflare Worker REST API for the GroundLevel SDK · POST /case-search · POST /weave · POST /risk · POST /draft · POST /compliance-audit",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test test/worker.test.js",
+    "sdk:sync": "node scripts/sync-sdk.js"
+  },
+  "dependencies": {
+    "@sjgant80-hub/groundlevel-sdk": "github:sjgant80-hub/groundlevel-sdk#main"
+  },
+  "devDependencies": {
+    "wrangler": "^3.78.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Simon Gant <sjgant80@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/sjgant80-hub/groundlevel-worker#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjgant80-hub/groundlevel-worker.git"
+  }
+}
